@@ -12,6 +12,7 @@ import ship3Img from "./ship/ship3.png";
 import notFoundImg from "./404Img.png";
 import emptyCart from "./empty-cart.png";
 import warningImg from "./warning.png";
+import plantCareIcon from "../icons/plant-care-icon.png";
 
 export {
   logo,
@@ -28,4 +29,5 @@ export {
   notFoundImg,
   emptyCart,
   warningImg,
+  plantCareIcon,
 };
