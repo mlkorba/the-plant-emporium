@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import { logo } from "@/public/assets/images";
+import { logo, plantCareIcon } from "@/public/assets/images";
 
 export const Navbar = () => {
   return (
     <div className="w-full bg-oliveGreen text-white">
-      <div className="max-w-container mx-auto h-20 px-4 flex items-center justify-between gap-2">
+      <div className="max-w-container mx-auto h-20 px-4 flex items-center gap-2">
         {/* Logo Start */}
         <div>
           <Image
@@ -17,13 +17,19 @@ export const Navbar = () => {
         {/* Logo End */}
         {/* Department Start */}
         <div className="navBarHover">
-          <div className="w-4 grid grid-cols-2 gap-[2px]">
-            <span className="w-1.5 h-1.5 border-[1px] border-white inline-flex"></span>
+          <div className="flex">
+            <Image src={plantCareIcon} className="w-6" />
           </div>
-          <p>Plant Care</p>
+          <p>Plant</p>
         </div>
         {/* Department End */}
         {/* Services Start */}
+        <div className="navBarHover">
+          <div className="flex">
+            <Image src={plantCareIcon} className="w-6" />
+          </div>
+          <p>Plant</p>
+        </div>
         {/* Services End */}
         {/* Search Bar Start */}
         {/* Search Bar End */}
