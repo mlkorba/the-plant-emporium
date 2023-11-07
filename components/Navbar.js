@@ -1,8 +1,8 @@
-import Image from "next/image";
-import React from "react";
-import { logo, plantCareIcon, shopIcon } from "@/public/assets/images";
-import { IoIosSearch } from "react-icons/io";
-import { AiOutlineHeart } from "react-icons/ai";
+import Image from 'next/image'
+import React from 'react'
+import { logo } from '@/public/assets/images'
+import { IoIosSearch } from 'react-icons/io'
+import { BsSuitHeartFill, BsFillPersonFill } from 'react-icons/bs'
 import { BsCart2 } from "react-icons/bs";
 import { FaRegUser } from "react-icons/fa";
 export const Navbar = () => {
