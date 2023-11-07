@@ -3,8 +3,8 @@ import React from 'react'
 import { logo } from '@/public/assets/images'
 import { IoIosSearch } from 'react-icons/io'
 import { BsSuitHeartFill, BsFillPersonFill } from 'react-icons/bs'
-import { BsCart2 } from "react-icons/bs";
-import { FaRegUser } from "react-icons/fa";
+import { FaShoppingCart } from 'react-icons/fa'
+
 export const Navbar = () => {
   return (
     <div className="w-full bg-oliveGreen text-white">
