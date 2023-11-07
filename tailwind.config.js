@@ -27,11 +27,14 @@ module.exports = {
         desertRose: "#E36F7E",
         jungleGreen: "#183E33",
         terracotta: "#D79662",
-        lavender: "#B5A3D3",
+        lavender: "#A68191",
       },
       boxShadow: {
         bannerShadow: "0 1px 2px 1 px #00000026",
       },
+      zIndex: {
+        '-1': '-1',
+       }
     },
   },
   plugins: [],
