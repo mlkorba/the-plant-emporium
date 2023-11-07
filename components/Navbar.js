@@ -27,11 +27,13 @@ export const Navbar = () => {
         <div className='text-[40px] font-bold'>
           <h2>The Plant Emporium</h2>
         </div>
-        {/* Department End */}
-        {/* Services Start */}
-        <div className="navBarHover">
-          <div className="flex">
-            <Image src={plantCareIcon} className="w-6" />
+        <div className='flex items-center gap-4'>
+          {/* My Favourites Start */}
+          {/* <div className='flex flex-col justify-center items-center gap-2 navBarHover'>
+            <BsSuitHeartFill className='text-xl' />
+            <p className='text-[14px] -mt-2'>Favourites</p>
+          </div> */}
+          {/* My Favourites End */}
           </div>
           <h2 className="text-base font-semibold ">Plant Care</h2>
         </div>
