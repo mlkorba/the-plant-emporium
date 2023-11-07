@@ -17,13 +17,15 @@ export const Navbar = () => {
             className="w-24 hover:scale-125 transition duration-500 cursor-pointer"
           />
         </div>
-        {/* Logo End */}
-        {/* Department Start */}
-        <div className="navBarHover">
-          <div className="flex items-center justify-center">
-            <Image src={shopIcon} className="w-6" />
+          <div>
+            <ul className='flex items-center gap-2 '>
+              <li className='text-base font-semibold navBarHover'>Shop</li>
+              <li className='text-base font-semibold navBarHover'>Services</li>
+            </ul>
           </div>
-          <h2 className="text-base font-semibold">Shop</h2>
+        </div>
+        <div className='text-[40px] font-bold'>
+          <h2>The Plant Emporium</h2>
         </div>
         {/* Department End */}
         {/* Services Start */}
