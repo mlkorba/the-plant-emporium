@@ -9,8 +9,11 @@ export const Banner = () => {
         <Image
               src={landingBg}
               alt='logo'
-              className='w-full opacity-50'
+              className='w-full h-auto opacity-50'
             />
+            <div className="absolute top-[450px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl font-semibold">
+      Your Text Goes Here
+    </div>
         </div>
     </div>
   )
