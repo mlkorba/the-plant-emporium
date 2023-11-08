@@ -7,3 +7,7 @@
     @apply h-12 px-5 rounded-full bg-transparent flex items-center gap-2 hover:bg-lavender duration-300 cursor-pointer;
   }
 }
+
+.relative:hover .absolute {
+  display: block;
+}
