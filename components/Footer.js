@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { logo, paymentMethods } from '@/public/assets/images'
-import { ImGithub } from 'react-icons/im'
+import { logo } from '@/public/assets/images'
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa'
 
 export const Footer = () => {
@@ -33,8 +32,18 @@ export const Footer = () => {
           </div>
         </div>
         {/* Logo End */}
+        {/* About Start */}
+        <div>
+          <h2 className='text-2xl font-semibold text-white mb-4'>About Us</h2>
+          <ul>
+            <li>FAQs</li>
+            <li>Shipping Policy</li>
+            <li>Refund Policy</li>
+          </ul>
+        </div>
+        {/* About End */}
         {/* Location Start */}
-        <div >
+        <div>
           <h2 className='text-2xl font-semibold text-white mb-4'>Location</h2>
           <div className='text-base flex-col gap-2'>
             <p>1234 Garden Street</p>
@@ -44,10 +53,27 @@ export const Footer = () => {
           </div>
         </div>
         {/* Location End */}
-        {/* Profile Start */}
+
+        {/* Subscribe Start */}
         <div>
-        <h2 className='text-2xl font-semibold text-white mb-4'>Location</h2>
+          <div>
+            <input
+              className='bg-white rounded-l-full px-4 py-2 text-sm'
+              placeholder='E-mail address'
+              type='text'
+            />
+            <button className='px-4 rounded-r-full h-9 bg-jungleGreen'>
+              Subscribe
+            </button>
+          </div>
+          <div className='mt-4'>
+            <p className='text-sm text-center'>
+              Subscribe to receive new product releases, exclusive discount
+              codes, invites to events, and a chance to win prizes!
+            </p>
+          </div>
         </div>
+        {/* Subscribe End*/}
       </div>
     </div>
   )
