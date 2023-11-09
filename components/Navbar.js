@@ -5,16 +5,20 @@ import { IoIosSearch } from 'react-icons/io'
 import { BsFillPersonFill } from 'react-icons/bs'
 import { FaShoppingCart } from 'react-icons/fa'
 
-export const Navbar = () => {
+export const Navbar = ({background}) => {
+  const navbarStyle = {
+    backgroundColor: background || 'transparent'
+  }
+
   return (
-    <div className='w-full text-white'>
-      <div className='max-w-container mt-10 mx-auto h-20 px-4 flex items-center justify-between gap-2'>
+    <div className='w-full text-white ' style={navbarStyle}>
+      <div className='max-w-[1280px] p-10 mx-auto h-20 px-4 flex items-center justify-between gap-2'>
         <div className='flex items-center gap-2'>
           <div>
             <Image
               src={logo}
               alt='logo'
-              className='w-[100px] hover:scale-125 transition duration-500 cursor-pointer'
+              className='w-[80px] hover:scale-125 transition duration-500 cursor-pointer'
             />
           </div>
 
