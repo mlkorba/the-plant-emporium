@@ -9,8 +9,10 @@ import logo from "./logo.png";
 // import ship2Img from "./ship/ship2.png";
 // import ship3Img from "./ship/ship3.png";
 import landingBg from "./landing-bg.webp";
+import plantOne from "./product-images/kari-shea-3_cyj5YkhTs-unsplash.jpg"
 
 export {
   logo,
   landingBg,
+  plantOne
 };
