@@ -1,21 +1,43 @@
 import React from 'react'
+import Image from 'next/image'
+import { localPlants } from '@/public/assets/images'
+import { seedling } from '@/public/assets/images'
 
 export const SectionThree = () => {
   return (
-    <div className='py-10 -mt-[500px] h-96 bg-white'>
-      <div className='flex flex-col items-center gap-4'>
-        <h1 className='text-2xl bg-lavender text-white py-2 w-96 text-center -mt-[68px]'>
-          Discover Nature's Bounty
-        </h1>
-        <span className='w-20 h-[3px] bg-jungleGreen'></span>
-        <p className='max-w-[800px] text-oliveGreen text-center'>
-          Nulla consectetur et mollit tempor esse. Eiusmod aliqua ea culpa
-          veniam exercitation irure duis. Labore officia in amet aliquip ut
-          officia id amet. Elit consequat fugiat nisi proident laboris fugiat
-          fugiat officia mollit. Aute excepteur officia ad irure qui aliqua amet
-          fugiat fugiat.
-        </p>
+    <section className='max-w-[1280px] mx-auto mb-16'>
+      <div className='flex items-center justify-center gap-16 mb-10'>
+        <div>
+          <p className='w-96 rounded-xl'>
+            Veniam mollit officia et ipsum eiusmod occaecat cupidatat culpa
+            aute. Adipisicing quis anim excepteur nostrud enim aliqua duis id
+            sunt velit labore. Sint tempor laboris ex laborum. Aliqua nostrud in
+            ad excepteur reprehenderit sunt nisi id non labore cupidatat laboris
+            sit sit. Consectetur aliqua non nulla magna ea deserunt irure ea
+            labore. Nostrud non minim quis voluptate. Esse ullamco irure laborum
+            mollit.
+          </p>
+        </div>
+        <div>
+          <Image src={seedling} className='w-96 rounded-xl shadow-md' />
+        </div>
       </div>
-    </div>
+      <div className='flex items-center justify-center gap-16 mb-16'>
+        <div>
+          <Image src={localPlants} className='w-96 rounded-xl shadow-md' />
+        </div>
+        <div>
+          <p className='w-96 rounded-xl'>
+            Veniam mollit officia et ipsum eiusmod occaecat cupidatat culpa
+            aute. Adipisicing quis anim excepteur nostrud enim aliqua duis id
+            sunt velit labore. Sint tempor laboris ex laborum. Aliqua nostrud in
+            ad excepteur reprehenderit sunt nisi id non labore cupidatat laboris
+            sit sit. Consectetur aliqua non nulla magna ea deserunt irure ea
+            labore. Nostrud non minim quis voluptate. Esse ullamco irure laborum
+            mollit.
+          </p>
+        </div>
+      </div>
+    </section>
   )
 }
