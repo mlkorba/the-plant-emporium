@@ -24,9 +24,9 @@ module.exports = {
       },
       colors: {
         oliveGreen: "#778A74",
-        desertRose: "#E36F7E",
         jungleGreen: "#183E33",
         terracotta: "#D79662",
+        darkPurple: "#301934",
         lavender: "#A68191",
       },
       boxShadow: {
