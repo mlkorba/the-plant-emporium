@@ -12,7 +12,9 @@ export const Navbar = ({background}) => {
 
   return (
     <div className='w-full text-white ' style={navbarStyle}>
-      <div className='max-w-[1280px] p-10 mx-auto h-20 px-4 flex items-center justify-between gap-2'>
+      <div className='max-w-[1280px] p-10 mt-10 mx-auto h-20 px-4 flex items-center justify-between gap-2'>
+        
+      
         <div className='flex items-center gap-2'>
           <div>
             <Image
@@ -30,9 +32,7 @@ export const Navbar = ({background}) => {
           </div>
         </div>
 
-        <div className='text-center flex-grow'>
-          <h1 className='text-[32px] font-bold'>The Plant Emporium</h1>
-        </div>
+       
 
         <div className='flex items-center justify-end gap-2'>
           <div className='flex flex-col justify-center items-center gap-0 navBarHover'>
