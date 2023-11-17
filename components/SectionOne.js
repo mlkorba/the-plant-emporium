@@ -2,9 +2,9 @@ import React from 'react'
 
 export const SectionOne = () => {
   return (
-    <div className='mx-auto -mt-[500px] h-[500px] bg-white mb-80 '>
+    <div className='max-w-contentConatiner mx-auto bg-white mb-80 z-10 relative'>
       <div className='flex flex-col items-center gap-4'>
-        <h1 className='text-[40px] bg-lavender font-semibold text-white py-[20px] w-[800px] h-28 text-center -mt-[56px]'>
+        <h1 className='text-[32px] bg-lavender font-semibold text-white w-[500px] py-2 text-center -mt-[35px]'>
           Discover Nature's Bounty
         </h1>
         <span className='w-20 h-[3px] bg-jungleGreen'></span>
