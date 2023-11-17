@@ -1,25 +1,20 @@
-import { Navbar } from "@/components/Navbar";
-import { Banner } from "@/components/Banner";
+import { Hero } from "@/components/Hero";
 import { SectionOne } from "@/components/SectionOne";
 import { SectionTwo } from "@/components/SectionTwo";
 import { SectionThree } from "@/components/SectionThree";
 import { SectionFour } from "@/components/SectionFour";
-import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
     <>
       <main>
-        <Navbar />
-        <Banner />
+        <Hero />
         <SectionOne />
-        {/* <SectionTwo /> */}
-        {/* <SectionThree />
-        <SectionFour /> */}
+        <SectionTwo />
+        {/* <SectionThree /> */}
+        {/* <PhotoSlider /> */}
+        {/* <SectionFour />  */}
       </main>
-      <footer>
-        <Footer />
-      </footer>
     </>
   );
 }
