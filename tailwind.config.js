@@ -27,7 +27,7 @@ module.exports = {
         jungleGreen: "#183E33",
         greyGreen: "#566269",
         terracotta: "#D79662",
-        darkPurple: "#301934",
+        darkPurple: "#54253a",
         lavender: "#A68191",
       },
       boxShadow: {
