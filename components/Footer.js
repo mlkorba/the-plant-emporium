@@ -54,7 +54,7 @@ export const Footer = () => {
         </div>
         {/* About End */}
         {/* Location Start */}
-        <div className='m-4 py-4 md:m-0 rounded-full text-center bg-jungleGreen md:flex md:flex-col md:items-center md:justify-center md:gap-2 md:bg-oliveGreen'>
+        <div className='m-4 py-4 md:m-0 rounded-xl text-center bg-jungleGreen md:flex md:flex-col md:items-center md:justify-center md:gap-2 md:bg-oliveGreen'>
           <h2 className='text-lg md:text-2xl font-semibold text-white'>
             Location
           </h2>
