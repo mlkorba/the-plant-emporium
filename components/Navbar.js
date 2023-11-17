@@ -92,7 +92,7 @@ export const Navbar = ({ background }) => {
 
       {/* Mobile menu items */}
       <div id='mobile-menu' className='hidden md:hidden px-4 py-2'>
-        <ul className='flex flex-col items-center gap-1'>
+        <ul className='flex flex-col items-center gap-2'>
           <li className='text-base font-semibold navBarHover'>
             <Link href='/products'>Shop</Link>
           </li>
