@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <body className={montserrat.className}>
         <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
         </body>
     </html>
   );
