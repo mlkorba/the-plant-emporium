@@ -13,7 +13,7 @@ import {
 export const Footer = () => {
   return (
     <footer className='text-white bg-oliveGreen pt-5'>
-      <div className='max-w-contentContainer text-center mx-auto grid grid-cols-1 md:grid-cols-4'>
+      <div className='max-w-contentContainer text-center mx-auto grid grid-cols-1 md:grid-cols-3'>
         {/* Logo Start */}
         <div className='flex flex-col items-center justify-center gap-2'>
           <Link href='/'>
@@ -54,7 +54,7 @@ export const Footer = () => {
         </div>
         {/* About End */}
         {/* Location Start */}
-        <div className='m-4 py-4 md:m-0 rounded-lg text-center px-4 bg-jungleGreen md:flex md:flex-col md:items-center md:justify-center md:gap-2 md:bg-oliveGreen'>
+        <div className='m-4 py-4 md:m-0 rounded-full text-center bg-jungleGreen md:flex md:flex-col md:items-center md:justify-center md:gap-2 md:bg-oliveGreen'>
           <h2 className='text-lg md:text-2xl font-semibold text-white'>
             Location
           </h2>
@@ -68,7 +68,7 @@ export const Footer = () => {
         {/* Location End */}
 
         {/* Subscribe Start */}
-        <div className='bg-darkPurple py-5 md:flex md:flex-col md:items-center md:justify-center'>
+        <div className='bg-darkPurple py-5 md:w-screen '>
           <div className='text-sm flex flex-col gap-4 '>
             <h1 className='text-lg font-semibold md:text-2xl '>
               Sign up for our newsletter!
@@ -91,7 +91,7 @@ export const Footer = () => {
         </div>
         {/* Subscribe End*/}
       </div>
-      <div className='bg-slate p-5 text-center'>
+      <div className='p-5 text-center'>
         <p>&copy;2023 Marcia Korba</p>
       </div>
     </footer>
