@@ -12,7 +12,7 @@ export default function Home() {
         <SectionOne />
         <SectionTwo />
         <SectionThree />
-        {/* <SectionFour />  */}
+        <SectionFour />
       </main>
     </>
   );
