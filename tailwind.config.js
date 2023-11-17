@@ -25,6 +25,7 @@ module.exports = {
       colors: {
         oliveGreen: "#778A74",
         jungleGreen: "#183E33",
+        greyGreen: "#566269",
         terracotta: "#D79662",
         darkPurple: "#301934",
         lavender: "#A68191",
