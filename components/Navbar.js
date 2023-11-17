@@ -114,8 +114,6 @@ export const Navbar = ({ background }) => {
             <Link href='#'>Search</Link>
           </li>
         </ul>
-
-        
       </div>
     </div>
   )
