@@ -6,8 +6,8 @@ import { landingBg } from '@/public/assets/images'
 export const Hero = () => {
   return (
     <div
-      className="hero-section relative h-screen flex flex-col justify-center text-white"
-      style={{ backgroundImage: `url(${landingBg.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      className="hero-section relative h-screen flex flex-col justify-center text-white z-0"
+      style={{ backgroundImage: `url(${landingBg.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }} 
     >
       <div className="absolute inset-0 bg-black opacity-40"></div>
       <div className="hero-content text-center relative z-10 xs:px-1 sm:px-2 sml:px-3">
