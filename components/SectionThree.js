@@ -1,14 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
 import { localPlants } from '@/public/assets/images'
-import { seedling } from '@/public/assets/images'
 
 export const SectionThree = () => {
   return (
-    <section className='max-w-[1280px] mx-auto mb-16'>
-      <div className='flex items-center justify-center gap-16 mb-10'>
+    <section className='max-w-contentContainer mx-auto p-4'>
+      <div className='md:flex md:items-center md:justify-center md:gap-16 mb-10'>
         <div>
-          <p className='w-96 rounded-xl'>
+          <p className='text-sm rounded-xl'>
             Veniam mollit officia et ipsum eiusmod occaecat cupidatat culpa
             aute. Adipisicing quis anim excepteur nostrud enim aliqua duis id
             sunt velit labore. Sint tempor laboris ex laborum. Aliqua nostrud in
@@ -19,15 +18,12 @@ export const SectionThree = () => {
           </p>
         </div>
         <div>
-          <Image src={seedling} className='w-96 rounded-xl shadow-md' />
+          <Image src={localPlants} className='text-sm rounded-xl shadow-md ' />
         </div>
       </div>
-      <div className='flex items-center justify-center gap-16 mb-16'>
+      <div className='md:flex md:items-center md:justify-center md:gap-16 mb-10'>
         <div>
-          <Image src={localPlants} className='w-96 rounded-xl shadow-md' />
-        </div>
-        <div>
-          <p className='w-96 rounded-xl'>
+          <p className='rounded-xl'>
             Veniam mollit officia et ipsum eiusmod occaecat cupidatat culpa
             aute. Adipisicing quis anim excepteur nostrud enim aliqua duis id
             sunt velit labore. Sint tempor laboris ex laborum. Aliqua nostrud in
@@ -36,6 +32,9 @@ export const SectionThree = () => {
             labore. Nostrud non minim quis voluptate. Esse ullamco irure laborum
             mollit.
           </p>
+          <div>
+            <Image src={localPlants} className='rounded-xl shadow-md' />
+          </div>
         </div>
       </div>
     </section>
