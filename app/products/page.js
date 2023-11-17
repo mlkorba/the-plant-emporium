@@ -14,7 +14,6 @@ async function ProductsPage () {
 
   return (
     <>
-      <Navbar background='#614051' />
       <main className='py-10'>
         <div className='grid grid-cols-4 gap-6 max-w-[1200px] w-contain mx-auto'>
           {values.map(item => (
