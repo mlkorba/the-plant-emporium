@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import { logo } from '@/public/assets/images'
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa'
@@ -9,11 +10,13 @@ export const Footer = () => {
       <div className='max-w-[1280px] mx-auto grid grid-cols-4'>
         {/* Logo Start */}
         <div className='flex flex-col gap-2'>
-          <Image
-            src={logo}
-            alt='logo'
-            className='w-[100px] hover:scale-125 transition duration-500 cursor-pointer'
-          />
+          <Link href='/'>
+            <Image
+              src={logo}
+              alt='logo'
+              className='w-[100px] hover:scale-125 transition duration-500 cursor-pointer'
+            />
+          </Link>
           <div className='flex gap-5 text-lg text-white'>
             <ul className='flex items-center gap-3'>
               <li>
