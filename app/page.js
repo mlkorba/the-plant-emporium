@@ -12,7 +12,6 @@ export default function Home() {
         <SectionOne />
         <SectionTwo />
         {/* <SectionThree /> */}
-        {/* <PhotoSlider /> */}
         {/* <SectionFour />  */}
       </main>
     </>
