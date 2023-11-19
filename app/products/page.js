@@ -14,14 +14,13 @@ async function ProductsPage () {
 
   return (
     <>
-      <main className='py-10'>
-        <div className='grid grid-cols-4 gap-6 max-w-[1200px] w-contain mx-auto'>
+      <main className='p-10'>
+        <div className='grid grid-cols-3 max-w-screen w-contain'>
           {values.map(item => (
-            <ProductCard key={item.uid} {...item} />
+            <ProductCard key={item.uid} products={item} />
           ))}
         </div>
       </main>
-      <Footer />
     </>
   )
 }
