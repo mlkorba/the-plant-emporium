@@ -19,3 +19,7 @@
 .relative:hover .absolute {
   display: block;
 }
+
+body {
+  overflow-x: hidden !important;
+}
