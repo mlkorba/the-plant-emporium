@@ -2,13 +2,13 @@ import React from 'react'
 
 export const SectionOne = () => {
   return (
-    <div className='max-w-contentConatiner mx-auto bg-white mb-10 md:mb-8 md:px-6 z-10 relative'>
+    <div className='max-w-contentConatiner mx-auto px-3 bg-white mb-10 md:mb-8 md:px-6 z-10 relative'>
       <div className='flex flex-col items-center gap-4'>
-        <h1 className='text-lg sml:text-xl md:text-2xl px-6 py-2 bg-darkPurple font-semibold rounded text-white text-center -mt-[20px]'>
+        <h1 className='text-lg sml:text-xl md:text-2xl lg:text-3xl px-6 py-2 bg-darkPurple font-semibold rounded text-white text-center -mt-[20px]'>
           Discover Nature's Bounty
         </h1>
 
-        <p className='max-w-contentContainer text-greyGreen text-center text-base font-semibold px-6'>
+        <p className='max-w-contentContainer text-greyGreen text-center text-base font-semibold px-6 lg:text-lg'>
           Welcome to our botanical haven, where we invite you to Discover
           Nature's Bounty. Immerse yourself in the lush world of plants and
           greenery as we celebrate the beauty and vitality of the natural
