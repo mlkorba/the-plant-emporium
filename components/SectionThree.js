@@ -6,13 +6,13 @@ export const SectionThree = () => {
   return (
     <section className='max-w-contentContainer mx-auto my-10 px-10'>
       <div className='md:flex md:items-center md:justify-center md:gap-8'>
-        <h1 className='text-2xl lg:text-3xl font-semibold text-center mb-4 md:w-full'>
+        <h1 className='text-2xl lg:text-3xl font-semibold text-center mb-5 md:w-full'>
           Plant Care Tips
         </h1>
       </div>
       <div className='md:flex md:items-center md:justify-center md:gap-8 mb-5'>
         <div className='md:w-full xl:w-1/2'>
-          <p className='text-sm lg:text-lg rounded-xl mb-2'>
+          <p className='text-sm text-center md:text-base lg:text-lg lgl:text-xl rounded-xl mb-2'>
             Veniam mollit officia et ipsum eiusmod occaecat cupidatat culpa
             aute. Adipisicing quis anim excepteur nostrud enim aliqua duis id
             sunt velit labore. Sint tempor laboris ex laborum. Aliqua nostrud in
