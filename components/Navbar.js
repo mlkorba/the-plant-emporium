@@ -28,7 +28,7 @@ export const Navbar = ({ background }) => {
               <Image
                 src={logo}
                 alt='logo'
-                className='w-[80px] hover:scale-125 transition duration-500 cursor-pointer'
+                className='w-[80px] mdl:hover:scale-125 transition duration-500 cursor-pointer'
               />
             </Link>
           </div>
@@ -51,7 +51,7 @@ export const Navbar = ({ background }) => {
         </div>
         {/* Right side of the navbar */}
         <div className='hidden md:flex items-center justify-center'>
-          <h1 className='text-3xl font-semibold'>The Plant Emporium</h1>
+          <h1 className='text-base lgl:text-2xl font-semibold'>The Plant Emporium</h1>
         </div>
         <div className='hidden md:flex items-center justify-end gap-2'>
           <div className='flex flex-col justify-center items-center gap-0 navBarHover'>
