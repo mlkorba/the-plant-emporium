@@ -4,15 +4,15 @@
 
 @layer components {
   .navBarHover {
-    @apply h-12 px-5 rounded-full bg-transparent flex items-center gap-2 hover:bg-slate duration-300 mdl:cursor-pointer;
+    @apply h-12 px-5 rounded-full bg-transparent flex items-center gap-2 hover:bg-slate duration-300 ;
   }
   
   .navBarHover2 {
-    @apply bg-transparent hover:bg-jungleGreen  hover:font-semibold rounded-full p-2 mdl:cursor-pointer;
+    @apply bg-transparent hover:bg-jungleGreen  hover:font-semibold rounded-full p-2 cursor-pointer;
   }
   
   .navBarHover3 {
-    @apply bg-transparent w-8 h-8 px-1 hover:bg-greyGreen  duration-300 cursor-pointer mdl:cursor-pointer;
+    @apply bg-transparent w-8 h-8 px-1 hover:bg-darkRosePink duration-300 cursor-pointer;
   }
 }
 
