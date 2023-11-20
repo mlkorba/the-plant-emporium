@@ -30,6 +30,9 @@ module.exports = {
         terracotta: "#D79662",
         darkPurple: "#54253a",
         lavender: "#A68191",
+        raisin:"#353047",
+        rosePink:"#ca93ac",
+        darkRosePink: "#935973",
       },
       boxShadow: {
         bannerShadow: "0 1px 2px 1 px #00000026",
