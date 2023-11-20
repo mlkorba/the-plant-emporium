@@ -7,7 +7,7 @@ export const SectionOne = () => {
         <h1 className='text-lg sml:text-xl md:text-2xl lg:text-3xl px-6 py-2 bg-darkPurple font-semibold rounded text-white text-center -mt-[20px]'>
           Discover Nature's Bounty
         </h1>
-
+        <span className='w-20 min-h-[3px] bg-jungleGreen'></span>
         <p className='max-w-contentContainer text-greyGreen text-center text-base font-semibold px-6 lg:text-lg'>
           Welcome to our botanical haven, where we invite you to Discover
           Nature's Bounty. Immerse yourself in the lush world of plants and
