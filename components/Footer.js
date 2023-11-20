@@ -12,8 +12,8 @@ import {
 
 export const Footer = () => {
   return (
-    <footer className='text-white bg-oliveGreen pt-5'>
-      <div className='max-w-contentContainer text-center mx-auto grid grid-cols-1 md:grid-cols-3'>
+    <footer className='text-white bg-oliveGreen pt-10 pb-5'>
+      <div className='max-w-contentContainer text-center mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4'>
         {/* Logo Start */}
         <div className='flex flex-col items-center justify-center gap-2'>
           <Link href='/'>
@@ -42,23 +42,21 @@ export const Footer = () => {
         </div>
         {/* Logo End */}
         {/* About Start */}
-        <div className='mb-4 text-center px-4 md:flex md:flex-col md:items-center md:justify-center'>
-          <h2 className='text-lg mdl:text-2xl navBarHover2 text-white'>
-            About Us
-          </h2>
+        <div className='text-center px-4 md:flex md:flex-col md:items-center md:justify-center'>
           <ul className='text-base'>
-            <li className='navBarHover2'>FAQs</li>
-            <li className='navBarHover2'>Shipping Policy</li>
-            <li className='navBarHover2'>Refund Policy</li>
+            <li className='navBarHover2 mb-2'>About Us</li>
+            <li className='navBarHover2 mb-2'>FAQs</li>
+            <li className='navBarHover2 mb-2'>Shipping Policy</li>
+            <li className='navBarHover2 mb-2'>Refund Policy</li>
           </ul>
         </div>
         {/* About End */}
         {/* Location Start */}
-        <div className='m-4 py-4 md:m-0 rounded-xl text-center bg-jungleGreen md:flex md:flex-col md:items-center md:justify-center md:gap-2 md:bg-oliveGreen'>
-          <h2 className='text-lg md:text-2xl font-semibold text-white'>
+        <div className='m-4 py-4 md:m-0 rounded-xl text-center bg-jungleGreen md:flex md:flex-col lg:text-left md:justify-center md:gap-2 md:bg-oliveGreen'>
+          <h2 className='text-lg font-semibold lg:text-left text-white'>
             Location
           </h2>
-          <div className='text-base mdl:flex-col mdl:gap-2'>
+          <div className='text-base mdl:flex-col mdl:gap-2 lg:text-left'>
             <p>1234 Garden Street</p>
             <p>Botanicalville, Natureland</p>
             <p>A1A 1A1</p>
@@ -68,22 +66,22 @@ export const Footer = () => {
         {/* Location End */}
 
         {/* Subscribe Start */}
-        <div className='bg-darkPurple py-5 md:w-screen '>
+        <div className=' py-5 md:w-screen lg:w-auto'>
           <div className='text-sm flex flex-col gap-4 '>
             <h1 className='text-lg font-semibold md:text-2xl '>
               Sign up for our newsletter!
             </h1>
             <input
-              className='bg-white mx-auto w-3/4 md:w-1/2 rounded-full sml:rounded-l-full px-4 py-2'
+              className='bg-white mx-auto w-3/4 md:w-1/2 rounded-full sml:rounded-l-full px-4 py-2 lg:w-3/4'
               placeholder='E-mail address'
               type='text'
             />
-            <button className='mx-auto mb-4 px-4 h-9 w-3/4 md:w-1/2 rounded-full text-white bg-lavender navBarHover3 sml:rounded-r-full'>
+            <button className='mx-auto mb-4 px-4 h-9 w-3/4 md:w-1/2 lg:w-3/4 font-semibold rounded-full text-white bg-jungleGreen navBarHover3 sml:rounded-r-full'>
               Subscribe
             </button>
           </div>
           <div>
-            <p className='text-sm text-center px-5 md:px-8'>
+            <p className='text-sm text-center px-5 md:px-8 md:w-3/4 md:mx-auto lg:w-full'>
               Subscribe to receive new product releases, exclusive discount
               codes, invites to events, and a chance to win prizes!
             </p>
