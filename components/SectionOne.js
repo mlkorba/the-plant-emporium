@@ -8,7 +8,7 @@ export const SectionOne = () => {
           Discover Nature's Bounty
         </h1>
         <span className='w-20 min-h-[3px] bg-jungleGreen'></span>
-        <p className='max-w-contentContainer text-greyGreen text-center text-base font-semibold px-6 lg:text-lg'>
+        <p className='lgl:w-1/2 text-greyGreen text-center text-base font-semibold px-6 lg:text-lg lgl:text-xl'>
           Welcome to our botanical haven, where we invite you to Discover
           Nature's Bounty. Immerse yourself in the lush world of plants and
           greenery as we celebrate the beauty and vitality of the natural
