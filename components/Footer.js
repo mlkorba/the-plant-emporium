@@ -81,7 +81,7 @@ export const Footer = () => {
             </button>
           </div>
           <div>
-            <p className='text-sm text-center px-5 md:px-8 md:w-3/4 md:mx-auto lg:w-full'>
+            <p className='text-md text-center px-5 md:px-8 md:w-3/4 md:mx-auto lg:w-full'>
               Subscribe to receive new product releases, exclusive discount
               codes, invites to events, and a chance to win prizes!
             </p>
@@ -89,7 +89,16 @@ export const Footer = () => {
         </div>
         {/* Subscribe End*/}
       </div>
-      <div className='p-5 text-center'>
+      <div className='text-sm p-5 text-center'>
+        <p className='mb-5'>
+          <span className='font-semibold'>Disclaimer:</span> This website is a
+          personal project created for a college assignment. Its contents and
+          features are designed for experimentation and learning purposes only.
+          The information provided here is not intended for commercial use, and
+          any resemblance to real entities is purely coincidental. The creator
+          of this website is not responsible for any consequences arising from
+          the use of this site.
+        </p>
         <p>&copy;2023 Marcia Korba</p>
       </div>
     </footer>
