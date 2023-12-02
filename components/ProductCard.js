@@ -5,17 +5,19 @@ import Link from 'next/link'
 export const ProductCard = ({ uid, products }) => {
   const imageURL = `/assets/images/product-images/${products.image}`
   return (
-    <div className='max-w-contentContainer '>
-      <div className='w-full mb-4 sml:w-full rounded-lg shadow-lg overflow-hidden'>
+    <div className='max-w-contentContainer'>
+      <div className='w-full mb-4 rounded-lg shadow-lg overflow-hidden'>
         <div className='cursor-pointer overflow-hidden mb-5'>
           <div>
-            <Image
-              className='object-cover object-bottom w-full h-[275px] lg:h-[400px] lgl:h-[450px] xl:h-[500px] transition duration-500 cursor-pointer hover:scale-110'
-              src={imageURL}
-              width={320} // Adjusted width for smaller screens
-              height={250} // Adjusted height for smaller screens
-              alt={products.plant_name}
-            />
+            <Link href={`/products/${uid}`}>
+              <Image
+                className='object-cover object-bottom w-full h-[275px] lg:h-[400px] lgl:h-[450px] xl:h-[500px] transition duration-500 cursor-pointer hover:scale-110'
+                src={imageURL}
+                width={320} // Adjusted width for smaller screens
+                height={250} // Adjusted height for smaller screens
+                alt={products.plant_name}
+              />
+            </Link>
           </div>
         </div>
         {/* Description */}
@@ -31,14 +33,21 @@ export const ProductCard = ({ uid, products }) => {
                 <p>{products.description}</p>
               </div>
               <div className='absolute bottom-24 left-10 right-10'>
+                {!products.in_stock && (
+                  <p className='text-red-500 font-bold text-base text-center'>
+                    Out of Stock
+                  </p>
+                )}
                 <div className='flex justify-between text-sm md:text-base text-jungleGreen'>
-                  <p className='font-bold'>${products.price}</p>
-                  <p className='line-through'>${products.oldPrice}</p>
+                  <>
+                    <p className='font-bold'>${products.price}</p>
+                    <p className='line-through'>${products.oldPrice}</p>
+                  </>
                 </div>
               </div>
               <div className='text-center md:text-base absolute bottom-10 left-0 w-full'>
                 <Link href={`/products/${uid}`}>
-                  <span className='bg-oliveGreen hover:bg-jungleGreen text-white font-bold py-2 px-4 rounded-full cursor-pointer'>
+                  <span className='bg-oliveGreen hover:bg-jungleGreen text-white font-bold py-2 px-4 lgl:px-8 lgl:py-4 rounded-full cursor-pointer'>
                     View Details
                   </span>
                 </Link>
