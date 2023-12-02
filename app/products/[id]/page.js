@@ -14,7 +14,7 @@ async function ProductPage ({ params }) {
 
   return (
     <>
-      <main className='mx-auto'>
+      <main className='mx-auto mdl:mt-10 mdl:mb-20'>
         <ProductDetails product={productData} />
       </main>
     </>
