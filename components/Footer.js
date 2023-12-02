@@ -12,7 +12,7 @@ import {
 
 export const Footer = () => {
   return (
-    <footer className='text-white bg-oliveGreen pt-10 pb-5'>
+    <footer className='text-white bg-oliveGreen py-10'>
       <div className='max-w-contentContainer text-center mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4'>
         {/* Logo Start */}
         <div className='flex flex-col items-center justify-center gap-2'>
@@ -44,10 +44,10 @@ export const Footer = () => {
         {/* About Start */}
         <div className='text-center px-4 md:flex md:flex-col md:items-center md:justify-center'>
           <ul className='text-base'>
-            <li className='navBarHover2 mb-2'>About Us</li>
-            <li className='navBarHover2 mb-2'>FAQs</li>
-            <li className='navBarHover2 mb-2'>Shipping Policy</li>
-            <li className='navBarHover2 mb-2'>Refund Policy</li>
+            <li className='navBarHover2 mb-2 py-2 px-4'>About Us</li>
+            <li className='navBarHover2 mb-2 py-2 px-4'>FAQs</li>
+            <li className='navBarHover2 mb-2 py-2 px-4'>Shipping Policy</li>
+            <li className='navBarHover2 mb-2 py-2 px-4'>Refund Policy</li>
           </ul>
         </div>
         {/* About End */}
@@ -67,8 +67,8 @@ export const Footer = () => {
 
         {/* Subscribe Start */}
         <div className=' py-5 md:w-screen lg:w-auto'>
-          <div className='text-sm flex flex-col gap-4 '>
-            <h1 className='text-lg font-semibold md:text-2xl '>
+          <div className='text-sm flex flex-col gap-2 '>
+            <h1 className='text-lg font-semibold md:text-xl '>
               Sign up for our newsletter!
             </h1>
             <input
@@ -89,7 +89,7 @@ export const Footer = () => {
         </div>
         {/* Subscribe End*/}
       </div>
-      <div className='text-sm p-5 text-center'>
+      <div className='text-sm p-5 mx-auto text-left lg:w-3/4'>
         <p className='mb-5'>
           <span className='font-semibold'>Disclaimer:</span> This website is a
           personal project created for a college assignment. Its contents and
@@ -99,7 +99,7 @@ export const Footer = () => {
           of this website is not responsible for any consequences arising from
           the use of this site.
         </p>
-        <p>&copy;2023 Marcia Korba</p>
+        <p className='text-center'>&copy;2023 Marcia Korba</p>
       </div>
     </footer>
   )
