@@ -14,7 +14,7 @@ async function ProductPage ({ params }) {
 
   return (
     <>
-      <main className='min-h-screen py-24'>
+      <main className='mx-auto'>
         <ProductDetails product={productData} />
       </main>
     </>
