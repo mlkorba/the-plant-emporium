@@ -4,7 +4,7 @@
 
 @layer components {
   .navBarHover {
-    @apply h-12 px-5 rounded-full bg-transparent flex items-center gap-2 hover:bg-slate duration-300;
+    @apply h-12 px-5 rounded-full bg-transparent flex items-center gap-2 hover:bg-darkPurple duration-300;
   }
 
   .navBarHover2 {

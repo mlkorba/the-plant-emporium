@@ -18,8 +18,8 @@ export const Navbar = ({ background }) => {
   }
 
   return (
-    <div className='max-w-screen bg-greyGreen text-white'>
-      <div className='max-w-contentContainer p-10 mx-auto h-20 px-4 flex items-center justify-between  gap-2'>
+    <div className='max-w-screen bg-darkRosePink text-white'>
+      <div className='max-w-contentContainer p-10 mx-auto h-20 px-4 flex items-center justify-between gap-2'>
         {/* Left side of the navbar */}
 
         <div className='flex items-center gap-2'>
@@ -51,7 +51,9 @@ export const Navbar = ({ background }) => {
         </div>
         {/* Right side of the navbar */}
         <div className='hidden md:flex items-center justify-center'>
-          <h1 className='text-base lgl:text-2xl font-semibold'>The Plant Emporium</h1>
+          <h1 className='text-base lgl:text-2xl font-semibold'>
+            The Plant Emporium
+          </h1>
         </div>
         <div className='hidden md:flex items-center justify-end gap-2'>
           <div className='flex flex-col justify-center items-center gap-0 navBarHover'>
