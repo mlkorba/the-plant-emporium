@@ -5,12 +5,12 @@ import Link from 'next/link'
 export const ProductCard = ({ uid, products }) => {
   const imageURL = `/assets/images/product-images/${products.image}`
   return (
-    <div className='mb-5 lg:mb-10 px-2'>
-      <div className='w-full sml:w-full m-2 rounded-lg shadow-lg overflow-hidden'>
-        <div className='w-full cursor-pointer overflow-hidden mb-5'>
+    <div className='max-w-contentContainer '>
+      <div className='w-full mb-4 sml:w-full rounded-lg shadow-lg overflow-hidden'>
+        <div className='cursor-pointer overflow-hidden mb-5'>
           <div>
             <Image
-              className='object-cover object-bottom w-full  h-[320px] lg:h-[400px] lgl:h-[450px] xl:h-[500px] transition duration-500 cursor-pointer hover:scale-110'
+              className='object-cover object-bottom w-full h-[275px] lg:h-[400px] lgl:h-[450px] xl:h-[500px] transition duration-500 cursor-pointer hover:scale-110'
               src={imageURL}
               width={320} // Adjusted width for smaller screens
               height={250} // Adjusted height for smaller screens
@@ -19,10 +19,10 @@ export const ProductCard = ({ uid, products }) => {
           </div>
         </div>
         {/* Description */}
-        <div className='relative w-full h-[250px] sml:h-[265px] lgl:h-[300px] bg-white p-2 lg:p-5 lgl:px-8'>
+        <div className='relative w-full h-[275px] sml:h-[265px] lgl:h-[300px] bg-white p-2 lg:p-5 lgl:px-8'>
           <div className='flex flex-col'>
             <div>
-              <h2 className='text-sm md:text-base text-center font-bold mb-2 text-jungleGreen'>
+              <h2 className='text-lg mdl:text-xl lg:text-2xl text-center font-bold mb-2 text-jungleGreen'>
                 {products.plant_name}
               </h2>
             </div>
