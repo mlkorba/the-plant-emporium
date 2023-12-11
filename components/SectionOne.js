@@ -2,7 +2,7 @@ import React from 'react'
 
 export const SectionOne = () => {
   return (
-    <div className='max-w-contentConatiner mx-auto px-3 bg-white mb-10 md:mb-8 md:px-6 z-10 relative'>
+    <div className='max-w-contentConatiner min-h-screen mx-auto px-3 bg-white mb-10 md:mb-8 md:px-6 z-10 relative'>
       <div className='flex flex-col items-center gap-4'>
         <h1 className='text-lg sml:text-xl md:text-2xl lg:text-3xl px-6 py-2 bg-darkPurple font-semibold rounded text-white text-center -mt-[20px]'>
           Discover Nature's Bounty
