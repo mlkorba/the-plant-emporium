@@ -7,9 +7,7 @@ export function BuyNowButton ({ priceID }) {
       <button
         type='submit'
         value='submit'
-        className='w-2/5 text-xl font-bold rounded-md bg-white/5 hover:bg-white/20
-  py-2.5 text-white ring-4 ring-white/5 ring-offset-2
-  ring-offset-white/[0.09]'
+        className='w-1/2 text-xl font-bold rounded-full bg-jungleGreen hover:bg-oliveGreen duration-300 cursor-pointer text-white py-2'
       >
         Buy Now
       </button>
