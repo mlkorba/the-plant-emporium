@@ -12,13 +12,9 @@ const toggleMobileMenu = () => {
   mobileMenu.classList.toggle('hidden')
 }
 
-export const Navbar = ({ background }) => {
-  const navbarStyle = {
-    backgroundColor: background || 'transparent'
-  }
-
+export const Navbar = () => {
   return (
-    <div className='max-w-screen bg-darkRosePink text-white'>
+    <div className='max-w-screen bg-medGreen text-white'>
       <div className='max-w-contentContainer p-10 mx-auto h-20 px-4 flex items-center justify-between gap-2'>
         {/* Left side of the navbar */}
 
