@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaArrowLeftLong } from 'react-icons/fa6'
+import { BuyNowButton } from './BuyNowButton.js'
 
 export const ProductDetails = ({ product }) => {
   const imageURL = `/assets/images/product-images/${product.image}`
@@ -80,11 +81,7 @@ export const ProductDetails = ({ product }) => {
           <div className='text-center px-2'>
             {product.in_stock ? (
               <>
-                <button
-                  className={`text-base bg-jungleGreen hover:bg-oliveGreen text-white py-2 px-4 rounded-full cursor-pointer w-full sml:w-[75%] mdl:w-[50%] font-semibold`}
-                >
-                  Add to Cart
-                </button>
+                <BuyNowButton />
               </>
             ) : (
               <p className='text-red-700 font-bold text-xl'>Out of Stock</p>
