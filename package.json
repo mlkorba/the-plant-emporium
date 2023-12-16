@@ -9,13 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@stripe/react-stripe-js": "^2.4.0",
+    "@stripe/stripe-js": "^2.2.1",
     "autoprefixer": "10.4.16",
     "firebase-admin": "^11.11.0",
-    "next": "14.0.1",
+    "micro": "^10.0.1",
+    "next": "^14.0.4",
     "postcss": "8.4.31",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.11.0",
+    "stripe": "^14.9.0",
     "tailwindcss": "3.3.5"
   }
 }
