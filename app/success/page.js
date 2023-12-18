@@ -15,7 +15,7 @@ export default function Success ({ children }) {
             Transaction Successful! 😻
           </h1>
           <p className='text-xl mb-5'>
-            We have sent an confirmation email to{' '}
+            We have sent a confirmation email to{' '}
             <span className='font-medium'>client@email.com</span>
           </p>
           <Link
