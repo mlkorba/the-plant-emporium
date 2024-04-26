@@ -11,7 +11,7 @@ import {
   FaBuilding
 } from 'react-icons/fa'
 
-export const FooterV2 = () => {
+export const Footer = () => {
   return (
     <footer className='text-white bg-oliveGreen p-20'>
       <div className='flex justify-evenly gap-32 mb-10'>
