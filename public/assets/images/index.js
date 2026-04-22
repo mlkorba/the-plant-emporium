@@ -3,5 +3,6 @@ import landingBg from './landing-bg.webp'
 import localPlants from './local-plants.jpg'
 import succulentCorner from './succulent-corner-bg.jpg'
 import sadPlant from './sad-plant.jpg'
+import hangingPlant from './hanging-plant.jpg'
 
-export { logo, landingBg, localPlants, succulentCorner, sadPlant }
+export { logo, landingBg, localPlants, succulentCorner, sadPlant, hangingPlant }
