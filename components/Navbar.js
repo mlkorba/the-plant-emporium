@@ -14,64 +14,59 @@ const toggleMobileMenu = () => {
 
 export const Navbar = () => {
   return (
-    <div className='max-w-screen bg-medGreen text-white'>
-      <div className='max-w-contentContainer p-10 mx-auto h-20 px-4 flex items-center justify-between gap-2'>
-        {/* Left side of the navbar */}
+    <div className='bg-jungleGreen text-offWhite'>
+      <div className='max-w-contentContainer mx-auto px-6 h-20 flex items-center justify-between'>
 
-        <div className='flex items-center gap-2'>
-          <div>
-            <Link href='/'>
-              <Image
-                src={logo}
-                alt='logo'
-                className='w-[80px] mdl:hover:scale-125 transition duration-500 cursor-pointer'
-              />
-            </Link>
-          </div>
+        {/* Left */}
+        <div className='flex items-center gap-6'>
 
-          <div className='hidden md:block'>
-            <ul className='flex items-center gap-1'>
-              <li className='text-base font-semibold navBarHover'>
-                <Link href='/products'>Shop</Link>
-              </li>
-              <li className='text-base font-semibold navBarHover'>
-                <a
-                  href='https://github.com/mlkorba/the-plant-emporium'
-                  target='_blank'
-                >
-                  <FaGithub className='text-xl' />
-                </a>
-              </li>
-            </ul>
-          </div>
+          <Link href='/'>
+            <Image
+              src={logo}
+              alt='logo'
+              className='w-[80px] hover:scale-105 transition duration-300 cursor-pointer'
+            />
+          </Link>
+
+          <ul className='hidden md:flex items-center gap-6 text-sm font-medium text-offWhite/80'>
+            <li className='hover:text-oliveGreen transition'>
+              <Link href='/products'>Shop</Link>
+            </li>
+            <li className='hover:text-oliveGreen transition'>
+              <a
+                href='https://github.com/mlkorba/the-plant-emporium'
+                target='_blank'
+              >
+                <FaGithub className='text-xl' />
+              </a>
+            </li>
+          </ul>
+
         </div>
-        {/* Right side of the navbar */}
-        <div className='hidden md:flex items-center justify-center'>
-          <h1 className='text-base lgl:text-2xl font-semibold'>
+
+        {/* Center brand (desktop only) */}
+        <div className='hidden md:block'>
+          <h1 className='text-lg font-semibold tracking-wide'>
             The Plant Emporium
           </h1>
         </div>
-        <div className='hidden md:flex items-center justify-end gap-2'>
-          <div className='flex flex-col justify-center items-center gap-0 navBarHover'>
-            <BsFillPersonFill className='text-2xl' />
-          </div>
 
-          <div className='flex flex-col justify-center items-center gap-0 navBarHover'>
-            <FaShoppingCart className='text-2xl' />
-          </div>
+        {/* Right */}
+        <div className='hidden md:flex items-center gap-5'>
 
-          <div className='relative'>
-            <div className='flex flex-col justify-center items-center gap-0 navBarHover'>
-              <IoIosSearch className='text-2xl' />
-            </div>
-          </div>
+          <BsFillPersonFill className='text-xl hover:text-oliveGreen transition cursor-pointer' />
+
+          <FaShoppingCart className='text-xl hover:text-oliveGreen transition cursor-pointer' />
+
+          <IoIosSearch className='text-xl hover:text-oliveGreen transition cursor-pointer' />
+
         </div>
-        {/* Mobile hamburger menu */}
-        <div className='block md:hidden'>
-          {/* Add your mobile menu icon (e.g., a hamburger menu) */}
+
+        {/* Mobile menu button */}
+        <div className='md:hidden'>
           <button
             type='button'
-            className='text-white focus:outline-none'
+            className='text-offWhite focus:outline-none'
             onClick={toggleMobileMenu}
           >
             <svg
@@ -79,26 +74,28 @@ export const Navbar = () => {
               fill='none'
               stroke='currentColor'
               viewBox='0 0 24 24'
-              xmlns='http://www.w3.org/2000/svg'
             >
               <path
                 strokeLinecap='round'
                 strokeLinejoin='round'
                 strokeWidth='2'
                 d='M4 6h16M4 12h16m-7 6h7'
-              ></path>
+              />
             </svg>
           </button>
         </div>
+
       </div>
 
-      {/* Mobile menu items */}
-      <div id='mobile-menu' className='hidden md:hidden px-4 py-2'>
-        <ul className='flex flex-col items-center gap-2'>
-          <li className='text-base font-semibold navBarHover'>
+      {/* Mobile menu */}
+      <div id='mobile-menu' className='hidden md:hidden px-6 pb-4'>
+        <ul className='flex flex-col gap-3 text-offWhite/80 text-base font-medium'>
+
+          <li className='hover:text-oliveGreen transition'>
             <Link href='/products'>Shop</Link>
           </li>
-          <li className='text-base font-semibold navBarHover'>
+
+          <li className='hover:text-oliveGreen transition'>
             <a
               href='https://github.com/mlkorba/the-plant-emporium'
               target='_blank'
@@ -106,15 +103,19 @@ export const Navbar = () => {
               GitHub
             </a>
           </li>
-          <li className='text-base font-semibold navBarHover'>
+
+          <li className='hover:text-oliveGreen transition'>
             <Link href='#'>Account</Link>
           </li>
-          <li className='text-base font-semibold navBarHover'>
+
+          <li className='hover:text-oliveGreen transition'>
             <Link href='#'>My Cart</Link>
           </li>
-          <li className='text-base font-semibold navBarHover'>
+
+          <li className='hover:text-oliveGreen transition'>
             <Link href='#'>Search</Link>
           </li>
+
         </ul>
       </div>
     </div>

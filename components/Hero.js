@@ -6,28 +6,44 @@ import { landingBg } from '@/public/assets/images'
 export const Hero = () => {
   return (
     <div
-      className='hero-section relative h-screen flex flex-col justify-center text-white z-0 bg-fixed'
+      className='relative h-screen flex items-center text-offWhite'
       style={{
         backgroundImage: `url(${landingBg.src})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center'
+        backgroundPosition: 'center',
       }}
     >
-      <div className='absolute inset-0 bg-black opacity-40'></div>
-      <div className='hero-content text-center relative z-10 px-5 sml:px-6 md:px-8'>
-        <h1 className='text-4xl lgl:text-5xl mb-4'>
-          Discover the Beauty of Succulents
-        </h1>
-        <h2 className='text-lg lgl:text-2xl mb-8'>
-          Transform your space with our handpicked collection of unique and
-          low-maintenance succulent plants.
-        </h2>
-        <Link
-          href='/products'
-          className='cta-button bg-darkPurple hover:bg-lavender hover:font-semibold text-white py-2 px-4 rounded-full inline-block text-lg lgl:text-2xl drop-shadow-md duration-300 cursor-pointer'
-        >
-          Explore Our Collection
-        </Link>
+      <div className='absolute inset-0 bg-jungleGreen/60'></div>
+
+      <div className='relative z-10 max-w-contentContainer mx-auto px-6 md:px-8 text-left'>
+
+        <div className='max-w-2xl'>
+
+          <p className='text-oliveGreen uppercase tracking-widest text-sm mb-4'>
+            Succulent Collection
+          </p>
+
+          <h1 className='text-4xl lgl:text-5xl font-bold mb-5 leading-tight'>
+            Discover the Beauty of Succulents
+          </h1>
+
+          <div className='w-24 h-[2px] bg-oliveGreen mb-6'></div>
+
+          <p className='text-offWhite/80 text-lg lgl:text-xl mb-8 leading-relaxed'>
+            Transform your space with our handpicked collection of unique and
+            low-maintenance succulent plants designed to bring calm, nature, and
+            simplicity into your home.
+          </p>
+
+          <Link
+            href='/products'
+            className='inline-block bg-offWhite text-jungleGreen font-semibold py-3 px-8 rounded-full hover:bg-oliveGreen hover:text-offWhite transition duration-300 shadow-md'
+          >
+            Explore Our Collection
+          </Link>
+
+        </div>
+
       </div>
     </div>
   )
