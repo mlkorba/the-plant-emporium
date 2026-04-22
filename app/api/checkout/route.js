@@ -1,29 +1,30 @@
-import { headers } from 'next/headers'
-import { stripe } from '@/lib/stripe'
+import { headers } from "next/headers";
+import { stripe } from "@/lib/stripe";
 
-async function POST (request) {
-  console.clear()
+async function POST(request) {
+  console.clear();
 
-  const body = await request.formData()
-  const formData = new FormData()
-  const price = body.get('price')
-  const quantity = 1
+  const body = await request.formData();
+  const formData = new FormData();
+  const price = body.get("price");
+  const quantity = 1;
+  const headersList = await headers();
 
   //Create Checkout Sessions from body params.
   const checkoutSession = await stripe.checkout.sessions.create({
-    mode: 'payment',
+    mode: "payment",
     line_items: [
       {
-        price: 'price_1ONmzCBHzX9Fd9GlzqfEIku5',
-        quantity
-      }
+        price: "price_1ONmzCBHzX9Fd9GlzqfEIku5",
+        quantity,
+      },
     ],
-    success_url: `${headers().get('origin')}/success`,
-    cancel_url: `${headers().get('origin')}/canceled`
-  })
+    success_url: `${headersList.get("origin")}/success`,
+    cancel_url: `${headersList.get("origin")}/canceled`,
+  });
 
   // redirect(checkoutSession.url)
-  return Response.redirect(checkoutSession.url)
+  return Response.redirect(checkoutSession.url);
 }
 
-export { POST }
+export { POST };
