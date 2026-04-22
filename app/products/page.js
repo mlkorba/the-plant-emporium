@@ -1,7 +1,7 @@
 import { getProducts } from '@/lib/firebase/getProducts'
 import { ProductCard } from '@/components/ProductCard'
 
-async function ProductsPage () {
+async function ProductsPage() {
   const payload = await getProducts()
   const keys = Object.keys(payload)
   const values = Object.values(payload)
@@ -16,7 +16,7 @@ async function ProductsPage () {
         </h1>
         <div className='sml:grid sml:grid-cols-2 sml:gap-5 mdl:grid-cols-3 max-w-contentContainer mx-auto w-contain'>
           {values.map(item => (
-            <ProductCard uid={item.uid} products={item} />
+            <ProductCard key={item.uid} uid={item.uid} products={item} />
           ))}
         </div>
       </main>
