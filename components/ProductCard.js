@@ -1,61 +1,63 @@
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export const ProductCard = ({ uid, products }) => {
-  const imageURL = `/assets/images/product-images/${products.image}`
+  const imageURL = `/assets/images/product-images/${products.image}`;
   return (
-    <div className='max-w-contentContainer'>
-      <div className='w-full mb-4 rounded-lg shadow-lg overflow-hidden'>
-        <div className='cursor-pointer overflow-hidden mb-5'>
-          <div>
-            <Link href={`/products/${uid}`}>
-              <Image
-                className='object-cover object-bottom w-full h-[275px] lg:h-[400px] lgl:h-[450px] xl:h-[500px] transition duration-500 cursor-pointer hover:scale-110'
-                src={imageURL}
-                width={320} // Adjusted width for smaller screens
-                height={250} // Adjusted height for smaller screens
-                alt={products.plant_name}
-              />
-            </Link>
+    <div className="max-w-contentContainer mx-auto">
+      <div className="group h-full flex flex-col bg-offWhite rounded-2xl overflow-hidden shadow-sm border border-oliveGreen/10 hover:shadow-md transition duration-300">
+        <Link href={`/products/${uid}`}>
+          <div className="overflow-hidden">
+            <Image
+              src={imageURL}
+              width={400}
+              height={400}
+              alt={products.plant_name}
+              className="w-full h-[280px] object-cover group-hover:scale-105 transition duration-500"
+            />
           </div>
-        </div>
-        {/* Description */}
-        <div className='relative w-full h-[275px] sml:h-[265px] lgl:h-[300px] bg-white p-2 lg:p-5 lgl:px-8'>
-          <div className='flex flex-col'>
-            <div>
-              <h2 className='text-lg mdl:text-xl lg:text-2xl text-center font-bold mb-2 text-jungleGreen'>
-                {products.plant_name}
-              </h2>
-            </div>
-            <div className='px-4'>
-              <div className='text-sm md:text-base text-jungleGreen'>
-                <p>{products.description}</p>
+        </Link>
+
+        <div className="p-5 flex flex-col flex-1 gap-4">
+          <h2 className="text-lg font-semibold text-slate text-center">
+            {products.plant_name}
+          </h2>
+
+          <p className="text-sm text-greyGreen text-center line-clamp-2 min-h-[40px]">
+            {products.description}
+          </p>
+
+          <div className="flex flex-col items-center gap-2">
+            {!products.in_stock ? (
+              <span className="text-sm font-semibold uppercase tracking-wide text-white bg-accentPink px-4 py-1.5 rounded-full shadow-sm">
+                Out of Stock
+              </span>
+            ) : (
+              <div className="flex items-center gap-3">
+                <p className="text-lg font-semibold text-jungleGreen">
+                  ${products.price}
+                </p>
+
+                <p className="text-sm text-greyGreen line-through">
+                  ${products.oldPrice}
+                </p>
               </div>
-              <div className='absolute bottom-24 left-10 right-10'>
-                {!products.in_stock && (
-                  <p className='text-red-500 font-bold text-base text-center'>
-                    Out of Stock
-                  </p>
-                )}
-                <div className='flex justify-between text-sm md:text-base text-jungleGreen'>
-                  <>
-                    <p className='font-bold'>${products.price}</p>
-                    <p className='line-through'>${products.oldPrice}</p>
-                  </>
-                </div>
-              </div>
-              <div className='text-center md:text-base absolute bottom-10 left-0 w-full'>
-                <Link href={`/products/${uid}`}>
-                  <span className='bg-oliveGreen hover:bg-jungleGreen text-white font-bold py-2 px-4 lgl:px-8 lgl:py-4 rounded-full cursor-pointer'>
-                    View Details
-                  </span>
-                </Link>
-              </div>
-            </div>
+            )}
+          </div>
+
+          <div className="mt-auto">
+            <Link
+              href={`/products/${uid}`}
+              className="inline-flex w-full justify-center"
+            >
+              <span className="w-full text-center bg-oliveGreen hover:bg-jungleGreen text-white font-semibold py-2.5 rounded-full transition duration-300">
+                View Details
+              </span>
+            </Link>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
