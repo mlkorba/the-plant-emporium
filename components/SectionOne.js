@@ -2,13 +2,20 @@ import React from 'react'
 
 export const SectionOne = () => {
   return (
-    <div className='max-w-contentConatiner min-h-screen mx-auto px-3 bg-white mb-10 md:mb-8 md:px-6 z-10 relative'>
-      <div className='flex flex-col items-center gap-4'>
-        <h1 className='text-lg sml:text-xl md:text-2xl lg:text-3xl px-6 py-2 bg-darkPurple font-semibold rounded text-white text-center -mt-[20px]'>
+    <section className='max-w-contentConatiner mx-auto px-4 md:px-6 mb-12'>
+      <div className='bg-offWhite rounded-2xl shadow-sm px-6 py-14 flex flex-col items-center text-center gap-6'>
+
+        <p className='text-oliveGreen text-xs md:text-sm uppercase tracking-widest'>
+          Botanical Collection
+        </p>
+
+        <h1 className='text-lg sml:text-xl md:text-2xl lg:text-3xl px-6 py-3 bg-jungleGreen font-semibold rounded-full text-white shadow-md'>
           Discover Nature's Bounty
         </h1>
-        <span className='w-20 min-h-[3px] bg-jungleGreen'></span>
-        <p className='lgl:w-1/2 text-greyGreen text-center text-base font-semibold px-6 lg:text-lg lgl:text-xl'>
+
+        <span className='w-24 h-[2px] bg-oliveGreen'></span>
+
+        <p className='lgl:w-2/3 text-greyGreen text-base md:text-lg lgl:text-xl leading-relaxed'>
           Welcome to our botanical haven, where we invite you to Discover
           Nature's Bounty. Immerse yourself in the lush world of plants and
           greenery as we celebrate the beauty and vitality of the natural
@@ -19,8 +26,10 @@ export const SectionOne = () => {
           ordinary. Join us on this journey of discovery, and let the abundance
           of nature inspire and enrich your life.
         </p>
-        <span className='w-20 min-h-[3px] bg-jungleGreen'></span>
+
+        <span className='w-24 h-[2px] bg-oliveGreen'></span>
+
       </div>
-    </div>
+    </section>
   )
 }

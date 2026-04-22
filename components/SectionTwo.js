@@ -5,27 +5,51 @@ import { BiSolidBookHeart } from 'react-icons/bi'
 
 export const SectionTwo = () => {
   return (
-    <section className='py-10 bg-lavender md:flex md:items-center md:justify-center'>
-      <div className='max-w-contentContainer mx-auto w-fit md:flex md:justify-center md:items-center md:gap-5 mdl:gap-10 lg:gap-20 lgl:gap-24 xl:gap-28 xxl:gap-32'>
-        <div className='w-40 h-40 sml:w-44 sml:h-44 lg:w-52 lg:h-52 bg-white rounded-full p-4 my-5 flex items-center justify-center drop-shadow-xl'>
-          <div className='flex flex-col items-center gap-2 '>
-            <PiPlantFill className='text-4xl lg:text-5xl' />
-            <p className='text-base font-semibold'>Locally sourced</p>
-          </div>
-        </div>
+    <section className='py-20 bg-jungleGreen'>
+      <div className='max-w-contentContainer mx-auto px-6 text-center'>
 
-        <div className='w-40 h-40 sml:w-44 sml:h-44 lg:w-52 lg:h-52 bg-white rounded-full p-4 my-10 flex items-center justify-center drop-shadow-xl'>
-          <div className='flex flex-col items-center gap-2'>
-            <TbTruckDelivery className='text-4xl lg:text-5xl' />
-            <p className='text-base font-semibold'>Fast delivery</p>
-          </div>
-        </div>
+        <h2 className='text-2xl lg:text-3xl font-semibold mb-12 text-offWhite/95'>
+          Why Shop With Us
+        </h2>
 
-        <div className='w-40 h-40 sml:w-44 sml:h-44 lg:w-52 lg:h-52 bg-white rounded-full p-4 my-5 flex items-center justify-center drop-shadow-xl'>
-          <div className='flex flex-col items-center gap-2'>
-            <BiSolidBookHeart className='text-4xl lg:text-5xl' />
-            <p className='text-base font-semibold'>Expert Advice</p>
+        <div className='flex flex-col md:flex-row items-center justify-center gap-12'>
+
+          <div className='flex flex-col items-center text-center group'>
+            <div className='w-36 h-36 lg:w-44 lg:h-44 bg-offWhite rounded-full flex items-center justify-center shadow-md group-hover:shadow-xl transition duration-300'>
+              <PiPlantFill className='text-4xl lg:text-5xl text-oliveGreen' />
+            </div>
+            <p className='mt-5 text-base font-semibold text-offWhite/95'>
+              Locally Sourced
+            </p>
+            <p className='text-sm text-offWhite/80 max-w-[200px] mt-2 leading-relaxed'>
+              Fresh, high-quality plants grown by trusted local growers.
+            </p>
           </div>
+
+          <div className='flex flex-col items-center text-center group'>
+            <div className='w-36 h-36 lg:w-44 lg:h-44 bg-offWhite rounded-full flex items-center justify-center shadow-md group-hover:shadow-xl transition duration-300'>
+              <TbTruckDelivery className='text-4xl lg:text-5xl text-oliveGreen' />
+            </div>
+            <p className='mt-5 text-base font-semibold text-offWhite/95'>
+              Fast Delivery
+            </p>
+            <p className='text-sm text-offWhite/80 max-w-[200px] mt-2 leading-relaxed'>
+              Quick and reliable shipping straight to your door.
+            </p>
+          </div>
+
+          <div className='flex flex-col items-center text-center group'>
+            <div className='w-36 h-36 lg:w-44 lg:h-44 bg-offWhite rounded-full flex items-center justify-center shadow-md group-hover:shadow-xl transition duration-300'>
+              <BiSolidBookHeart className='text-4xl lg:text-5xl text-oliveGreen' />
+            </div>
+            <p className='mt-5 text-base font-semibold text-offWhite/95'>
+              Expert Advice
+            </p>
+            <p className='text-sm text-offWhite/80 max-w-[200px] mt-2 leading-relaxed'>
+              Helpful tips to keep your plants healthy and thriving.
+            </p>
+          </div>
+
         </div>
       </div>
     </section>

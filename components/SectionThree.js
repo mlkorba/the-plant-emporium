@@ -4,32 +4,83 @@ import { localPlants } from '@/public/assets/images'
 
 export const SectionThree = () => {
   return (
-    <section className='max-w-contentContainer mx-auto my-10 px-10'>
-      <div className='md:flex md:items-center md:justify-center md:gap-8'>
-        <h1 className='text-2xl lg:text-3xl font-semibold text-center mb-5 md:w-full'>
+    <section className='max-w-contentContainer mx-auto my-16 px-6 py-14 bg-offWhite rounded-3xl'>
+
+      <div className='text-center mb-12'>
+        <h1 className='text-3xl lg:text-4xl font-bold mb-3 text-slate'>
           Plant Care Tips
         </h1>
+        <p className='text-greyGreen max-w-xl mx-auto text-base md:text-lg'>
+          Keep your plants thriving with these simple, effective care tips.
+        </p>
       </div>
-      <div className='md:flex md:items-center md:justify-center md:gap-8 mb-5'>
-        <div className='md:w-full xl:w-1/2'>
-          <p className='text-sm text-center md:text-base lg:text-lg lgl:text-xl rounded-xl mb-2'>
-            Veniam mollit officia et ipsum eiusmod occaecat cupidatat culpa
-            aute. Adipisicing quis anim excepteur nostrud enim aliqua duis id
-            sunt velit labore. Sint tempor laboris ex laborum. Aliqua nostrud in
-            ad excepteur reprehenderit sunt nisi id non labore cupidatat laboris
-            sit sit. Consectetur aliqua non nulla magna ea deserunt irure ea
-            labore. Nostrud non minim quis voluptate. Esse ullamco irure laborum
-            mollit.
-          </p>
-        </div>
-      </div>
-      <div className='md:flex md:items-center md:justify-center md:gap-8 mb-5'>
-        <div className='md:w-full xl:w-1/2'>
+
+      <div className='flex flex-wrap justify-center gap-8'>
+
+        <div className='w-full sm:w-[45%] lg:w-[22%] bg-white rounded-2xl shadow-sm hover:shadow-lg transition duration-300 overflow-hidden group border border-lightMist'>
           <Image
+            alt='potted plants on wooden shelf'
             src={localPlants}
-            className='w-full h-auto text-sm rounded-xl shadow-md'
+            className='w-full h-48 object-cover group-hover:scale-105 transition duration-300'
           />
+          <div className='p-5'>
+            <h3 className='font-semibold text-lg mb-2 text-slate'>
+              Watering
+            </h3>
+            <p className='text-sm text-greyGreen leading-relaxed'>
+              Avoid overwatering—most plants prefer slightly dry soil between watering.
+            </p>
+          </div>
         </div>
+
+        <div className='w-full sm:w-[45%] lg:w-[22%] bg-white rounded-2xl shadow-sm hover:shadow-lg transition duration-300 overflow-hidden group border border-lightMist'>
+          <Image
+            alt='potted plants on wooden shelf'
+            src={localPlants}
+            className='w-full h-48 object-cover group-hover:scale-105 transition duration-300'
+          />
+          <div className='p-5'>
+            <h3 className='font-semibold text-lg mb-2 text-slate'>
+              Sunlight
+            </h3>
+            <p className='text-sm text-greyGreen leading-relaxed'>
+              Place plants in bright indirect light for best growth.
+            </p>
+          </div>
+        </div>
+
+        <div className='w-full sm:w-[45%] lg:w-[22%] bg-white rounded-2xl shadow-sm hover:shadow-lg transition duration-300 overflow-hidden group border border-lightMist'>
+          <Image
+            alt='potted plants on wooden shelf'
+            src={localPlants}
+            className='w-full h-48 object-cover group-hover:scale-105 transition duration-300'
+          />
+          <div className='p-5'>
+            <h3 className='font-semibold text-lg mb-2 text-slate'>
+              Humidity
+            </h3>
+            <p className='text-sm text-greyGreen leading-relaxed'>
+              Increase humidity with misting or nearby water sources.
+            </p>
+          </div>
+        </div>
+
+        <div className='w-full sm:w-[45%] lg:w-[22%] bg-white rounded-2xl shadow-sm hover:shadow-lg transition duration-300 overflow-hidden group border border-lightMist'>
+          <Image
+            alt='potted plants on wooden shelf'
+            src={localPlants}
+            className='w-full h-48 object-cover group-hover:scale-105 transition duration-300'
+          />
+          <div className='p-5'>
+            <h3 className='font-semibold text-lg mb-2 text-slate'>
+              Repotting
+            </h3>
+            <p className='text-sm text-greyGreen leading-relaxed'>
+              Give roots space to grow by repotting when your plant outgrows its pot.
+            </p>
+          </div>
+        </div>
+
       </div>
     </section>
   )
